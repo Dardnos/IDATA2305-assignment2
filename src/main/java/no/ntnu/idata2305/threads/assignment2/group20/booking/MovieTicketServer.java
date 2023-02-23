@@ -9,8 +9,15 @@ import java.util.logging.Logger;
  * of available seats and booking tickets for clients.
  */
 public class MovieTicketServer {
-    // TBD
+
+    /**
+     * Name of the movie
+     */
     private final String movieName;
+
+    /**
+     * Number of available seats
+     */
     private int availableSeats;
 
     private static Logger logger = Logger.getLogger(MovieTicketServer.class.getName());
