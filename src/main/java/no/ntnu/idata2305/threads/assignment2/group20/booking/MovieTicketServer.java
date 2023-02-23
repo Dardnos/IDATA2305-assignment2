@@ -52,7 +52,7 @@ public class MovieTicketServer {
      * @throws IllegalArgumentException if clientName is null or empty or if the
      *                                  number of tickets is less than 0
      */
-    public void bookTicket(String clientName, int ticketsAmount) {
+    public synchronized void bookTicket(String clientName, int ticketsAmount) {
         if (clientName == null || clientName.isEmpty()) {
             throw new IllegalArgumentException("Client name cannot be null or empty");
         }
