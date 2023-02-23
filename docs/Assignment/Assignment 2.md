@@ -140,20 +140,20 @@ Here is what you need to do:
 
 - [x]  Run the program and observe the order and content of the logs
   - [x]  Make a note of the “Available tickets” value for each user
-  - [ ]  Write down about your observation and explain the logs you see
+  - [x]  Write down about your observation and explain the logs you see
 
 You might have noticed an anomaly in the logs and in real life scenarios, this is the problem we face with shared resources. Now your task is to fix this issue. There are many ways to fixing this, but the most common method would be to use **Thread Synchronization**.
 
 With that in mind:
 
-- [ ]  Make necessary changes in the code to resolve this problem
-  - [ ]  Write down about your observation and explain why your changes fixed the issue
+- [x]  Make necessary changes in the code to resolve this problem
+  - [x]  Write down about your observation and explain why your changes fixed the issue
 - Hint:
     You will need to change the code in [MovieTicketServer.java](../../src/main/java/no/ntnu/idata2305/threads/assignment2/group20/booking/MovieTicketServer.java)
 
 ## Deliverables
 
-- [ ]  Github repository URL or Zip file containing your code
-  - [ ]  [README.md](http://README.md) with instructions on how to run your code
-  - [ ]  docs/[REPORT.md](http://REPORT.md) or a section in your [README.md](http://README.md) explaining your observations
-- [ ]  A short and concise video of your code in action
+- [x]  Github repository URL or Zip file containing your code
+  - [x]  [README.md](http://README.md) with instructions on how to run your code
+  - [x]  docs/[REPORT.md](http://REPORT.md) or a section in your [README.md](http://README.md) explaining your observations
+- [x]  A short and concise video of your code in action
