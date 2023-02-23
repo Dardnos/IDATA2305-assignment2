@@ -61,7 +61,7 @@ public class MovieTicketServer {
         }
 
         // Just to make sonar happy
-        String intro = String.format("%s is trying to book %s tickets for  %s", clientName, ticketsAmount, movieName);
+        String intro = String.format("%s is trying to book %s tickets for %s", clientName, ticketsAmount, movieName);
         String notEnough = String.format("Sorry, %s there are not enough tickets available for %s", clientName,
                 movieName);
         String enough = String.format("Thank you, %s you have booked %s tickets for %s ", clientName, ticketsAmount,
