@@ -1,4 +1,5 @@
 package no.ntnu.idata2305.threads.assignment2.group20;
+
 import no.ntnu.idata2305.threads.assignment2.group20.booking.MovieTicketServer;
 import no.ntnu.idata2305.threads.assignment2.group20.booking.MovieTicketClient;
 
@@ -7,11 +8,8 @@ import no.ntnu.idata2305.threads.assignment2.group20.booking.MovieTicketClient;
  *
  */
 public class App {
-    public static void main( String[] args ) {
-        MovieTicketServer movieTicketServer = new MovieTicketServer(
-                "Troll",
-                10
-        );
+    public static void main(String[] args) {
+        MovieTicketServer movieTicketServer = new MovieTicketServer("Troll", 10);
 
         // Creating 4 threads
         Thread t1 = new MovieTicketClient(movieTicketServer, "Xiangming", 3);
