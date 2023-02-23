@@ -3,6 +3,11 @@ package no.ntnu.idata2305.threads.assignment2.group20.booking;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * Movie ticket server. This class is responsible for keeping track of the
+ * number
+ * of available seats and booking tickets for clients.
+ */
 public class MovieTicketServer {
     // TBD
     private final String movieName;
@@ -15,10 +20,16 @@ public class MovieTicketServer {
      * 
      * @param movieName      Name of the movie
      * @param availableSeats Number of available seats
+     * 
+     * @throws IllegalArgumentException if movieName is null or empty or if the
+     *                                  number of available seats is less than 0
      */
     public MovieTicketServer(String movieName, int availableSeats) {
         if (movieName == null || movieName.isEmpty()) {
             throw new IllegalArgumentException("Movie name cannot be null or empty");
+        }
+        if (availableSeats <= 0) {
+            throw new IllegalArgumentException("Number of available seats must be greater than 0");
         }
         this.movieName = movieName;
         this.availableSeats = availableSeats;
@@ -30,6 +41,9 @@ public class MovieTicketServer {
      * 
      * @param clientName    Name of the client
      * @param ticketsAmount Number of tickets to book
+     * 
+     * @throws IllegalArgumentException if clientName is null or empty or if the
+     *                                  number of tickets is less than 0
      */
     public void bookTicket(String clientName, int ticketsAmount) {
         if (clientName == null || clientName.isEmpty()) {
