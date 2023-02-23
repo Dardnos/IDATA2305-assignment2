@@ -119,10 +119,7 @@ import booking.MovieTicketClient;
 
 public class Main {
     public static void main(String[] args) {
-        MovieTicketServer movieTicketServer = new MovieTicketServer(
-					"Troll", 
-					10
-				);
+        MovieTicketServer movieTicketServer = new MovieTicketServer("Troll", 10);
 
         // Creating 4 threads
         Thread t1 = new MovieTicketClient(movieTicketServer, "Xiangming", 3);
@@ -145,7 +142,7 @@ Here is what you need to do:
     - [ ]  Make a note of the “Available tickets” value for each user
     - [ ]  Write down about your observation and explain the logs you see
 
-You might have noticed an anomaly in the logs and in real life scenarios, this is the problem we face with shared resources. Now your task is to fix this issue. There are many ways to fixing this, but the most common method would be to use ****************************Thread Synchronization****************************.
+You might have noticed an anomaly in the logs and in real life scenarios, this is the problem we face with shared resources. Now your task is to fix this issue. There are many ways to fixing this, but the most common method would be to use **Thread Synchronization**.
 
 With that in mind:
 
@@ -153,7 +150,7 @@ With that in mind:
     - [ ]  Write down about your observation and explain why your changes fixed the issue
 - Hint
     
-    You will need to change the code in `[MovieTicketServer.java](http://MovieTicketServer.java)`
+    You will need to change the code in [MovieTicketServer.java](../../src/main/java/no/ntnu/idata2305/threads/assignment2/group20/booking/MovieTicketServer.java)
     
 
 # Deliverables
