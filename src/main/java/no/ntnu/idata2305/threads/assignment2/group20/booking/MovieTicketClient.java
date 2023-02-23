@@ -1,13 +1,19 @@
 package no.ntnu.idata2305.threads.assignment2.group20.booking;
+import no.ntnu.idata2305.threads.assignment2.group20.booking.MovieTicketServer;
 
 public class MovieTicketClient {
-    // TBD
+    MovieTicketServer ticketServer;
+    String customerName;
+    int numberOfTickets;
 
-    public MovieTicketClient() {
-        // TBD
+    public MovieTicketClient(MovieTicketServer server,String name,int tickets) {
+        ticketServer = server;
+        customerName = name;
+        numberOfTickets = tickets;
+
     }
 
     public void run() {
-        // TBD
+        ticketServer.bookTicket(customerName,numberOfTickets);
     }
 }
